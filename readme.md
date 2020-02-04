@@ -2,6 +2,8 @@
 
 Testing detection of git operations for ignoring builds
 
+Github needs to fire a webhook for _new branches and tags_
+
 ```bash
 # fatal if no tags on this commit
 git describe --tags --exact-match HEAD
