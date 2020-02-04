@@ -6,6 +6,8 @@ const html = `
   <body>
     <h1>I'm tagged therefore I am</h1>
     <p>This commit: ${process.env.COMMIT_REF}</p>
+    <p>I wasn't tagged, so you shouldn't see me</p>
+    <!-- <p>I was tagged, so you should see me now</p> -->
   </body>
 </html>
 `;
