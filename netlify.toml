@@ -2,8 +2,8 @@
   command = "node index.js"
   publish = "dist"
   base = "./"
-  ignore = '! git describe --tags --exact-match HEAD'
-  # ignore = 'if git describe --tags --exact-match HEAD; then true; else echo ; fi'
+  ignore = 'git describe --tags --exact-match HEAD'
+
 
 
 
