@@ -13,7 +13,7 @@ git describe --exact-match HEAD
 # fatal if no tags on this commit
 git describe --tags --exact-match HEAD
 
-#echo out if a branch is detected
-if git describe --tags --exact-match HEAD; then echo "A BRANCH"; fi
+# exit with 1 if a tag is detected, else exit 0 to ignore the build
+if git describe --tags --exact-match HEAD; then exit 1; else exit 0; fi
 
 ```
