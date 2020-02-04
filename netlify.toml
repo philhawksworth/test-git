@@ -1,7 +1,8 @@
 [build]
   command = "node index.js"
   publish = "dist"
-  ignore = 'if git describe --tags --exact-match HEAD; then echo "Tagged. We will deploy" exit 1; else echo "Nothing to build" exit 0; fi'
+  ignore = ". tagged.sh"
+  # ignore = 'if git describe --tags --exact-match HEAD; then echo "Tagged. We will deploy" exit 1; else echo "Nothing to build" exit 0; fi'
 
 
 
